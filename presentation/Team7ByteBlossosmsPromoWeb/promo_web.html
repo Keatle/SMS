@@ -1,0 +1,651 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projects Day 2024, University of Johannesburg.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+  <!-- Link to Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Open Graph Meta Tags for social sharing -->
+    <meta property="og:title" content="TEAM 07 BYTE BLOSSOMS | Society Management System">
+    <meta property="og:description" content="An innovative society management system by Team 07. Join the digital revolution in campus society events and administration.">
+    <meta property="og:image" content="https://example.com/society_background2.jpg">
+    <meta property="og:url" content="https://example.com/byte_blossoms">
+    
+    <!-- Twitter Card for social sharing -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="TEAM 07 BYTE BLOSSOMS | Society Management System">
+    <meta name="twitter:description" content="Projects Day 2024. University of Johannesburg.">
+    <meta name="twitter:image" content="https://example.com/society_background2.jpg">
+
+    <!-- Title of the page -->
+    <title>TEAM 07 BYTE BLOSSOMS | Society Management System</title>
+    
+    <!-- Styles and additional scripts -->
+    <style>
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+    font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9; 
+            color: #333;
+        }
+
+        header {
+            background-color: #d3d3d3; 
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            width: 100%;
+        }
+
+
+        nav {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        
+        nav a:hover {
+            background-color: #FF6F00;
+        }
+
+       
+        .overview {
+            background-image: url('../Team7ByteBlossosmsPromoWeb/images/society_background1.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            height: 650px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            text-shadow: 0 0 10px rgb(0, 0, 0);
+            padding: 50px 50px;
+        }
+
+        .overview h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        .overview p {
+            font-size: 20px;
+            margin: 10px 0 20px;
+        }
+        
+
+        .btn {
+            background-color: #FF6F00;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #FF9F43;
+        }
+
+        section {
+            scroll-margin-top: 100px; 
+        }
+        .stakeholders {
+            padding: 50px 20px;
+            background-color: #ffffffa5;
+            text-align: center;
+            height: 80vh;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: #333;
+        }
+
+        .stakeholder-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around; 
+            gap: 30px; 
+        }
+
+        .stakeholder-item {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+            width: 300px;
+            text-align: left;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; 
+        }
+
+        .stakeholder-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .stakeholder-item h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #e6650a;
+        }
+
+        .stakeholder-item p {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+
+        .about {
+            background-color: #f7f7f7;
+            padding: 60px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 80vh;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: #333;
+        }
+
+        .about-content {
+            max-width: 900px;
+            width: 100%;
+            padding: 20px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); 
+        }
+
+        .about-item {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .about-item h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #e6650a;
+        }
+
+        .about-item p {
+            margin-bottom: 20px;
+        }
+
+        .about-item strong {
+            color: #333; 
+        }
+
+        .solution {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px 20px;
+            background-color: #ffffffa5;
+            min-height: 80vh; 
+        }
+
+        .solution-image {
+            width: 50%; 
+        }
+
+        .solution-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            border-radius: 0px;
+        }
+
+        .solution-text {
+            display: flex;
+            flex-direction: column; 
+            justify-content: center;
+            align-items: center; 
+            width: 50%;
+        }
+
+        .solution-item {
+            padding: 40px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(230, 101, 10, 0.733);
+            text-align: center;
+            width: 60%;
+        }
+
+        .solution-item p {
+            margin: 0;
+        }
+
+
+
+        .section-title {
+            font-size: 32px;
+            color: #FF6F00;
+            margin-bottom: 40px; 
+
+            text-align: center;
+        }
+
+
+        .vision {
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ffffffa5;
+            text-align: center;
+            scroll-margin: 100px;
+        }
+
+        .vision-content {
+            display: flex;
+            width: 100%; 
+            height: 80%;
+        }
+
+        .vision-text {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; 
+            padding: 20px;
+            background-color: transparent;
+        }
+
+        .vision-text h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .vision-text p {
+            margin-bottom: 10px;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        .vision-image {
+            width: 50%;
+            height: 100%; 
+        }
+
+        .vision-image img {
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; 
+        }
+
+        .currentsystem {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px 20px;
+            background-color: #ebebeb7c;
+            min-height: 80vh;
+        }
+
+        .currentsystem-image {
+            width: 45%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .currentsystem-image img {
+            width: 100%;
+            height: 75vh;
+            object-fit: cover; 
+            border-radius: 0px;
+        }
+
+        .currentsystem-text {
+            width: 50%; /* Takes up 50% of the section for the text */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .currentsystem-item {
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 0px;
+            width: 80%;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .features {
+            background-color: #f4f4f4; 
+            text-align: center;
+            padding: 50px 20px;
+            height: 80vh; 
+        }
+
+        .features-grid {
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: center;
+            gap: 30px; 
+        }
+
+        .feature-item {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: left; 
+            transition: transform 0.3s ease, box-shadow 0.3s ease; 
+        }
+
+        .feature-item:hover {
+            transform: translateY(-10px); 
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15); 
+        }
+
+        .feature-item h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #e6650a; 
+        }
+
+        .feature-item p {
+            font-size: 1rem;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .team {
+            background-color: #f9f9f9; 
+            margin: 0;
+            padding: 50px 20px;
+            text-align: center;
+            height: 80vh;
+        }
+
+        .team-container {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap; 
+            gap: 15px; 
+            margin-top: 10px;
+        }
+
+        .section-title {
+            margin-bottom: 30px; /* Add spacing below the title */
+        }
+
+        .team-member {
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            width: 220px; 
+            transition: box-shadow 0.3s ease; 
+        }
+
+        .team-member img {
+            width: 100%;
+            height: 30vh;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+        }
+
+        .team-member h3 {
+            font-size: 1.3rem;
+            margin-top: 15px;
+            margin-bottom: 2px;
+            color: #000000;
+        }
+
+        .team-member p {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 8px;
+        }
+
+
+        .section-title {
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 40px;
+        }
+
+        footer {
+            background-color: #000000;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+<body>
+
+
+
+    <!-- Header -->
+    <header>
+        <h1>Society Management System</h1>
+         <!-- <p>Manage events, track attendance, and organize your society efficiently.</p>-->
+        <nav>
+            <a href="#overview">Top</a>
+            <a href="#about">About Us</a>
+            <a href="#vision">Goal</a>
+            <a href="#currentsystem">Current System</a>
+            <a href="#solution">Solution</a>
+            <a href="#features">Features</a>
+            <a href="#stakeholders">Stakeholders</a>
+            <a href="#team">Team</a>
+        </nav>
+    </header>
+
+    <section id="overview" class="overview">
+    <div id="overview" class="overview">
+        <h1>Streamline Your Society</h1>
+        <p>By using our system to make Students Society Management simple</p>
+    </div> 
+</section>
+
+<!-- About Section -->
+<section id="about" class="about">
+    <h2 class="section-title"></h2>
+    <div class="about-content">
+        <div class="about-item">
+            <h3>Team 7: BYTE BLOSSOMS</h3>
+            <p><strong>Sponsor:</strong> Mrs. P. Thekis, Student Development Practitioner</p>
+            <p><strong>Mentor:</strong> Mr. A. Maganlal</p>
+            <p><strong>Project:</strong> Students Society Management System</p>
+        </div>
+    </div>       
+</section>
+
+ <!-- Vision Section -->
+<section id="vision" class="vision">
+    <div class="vision-content">
+        <!-- Left side: Heading and text content -->
+        <div class="vision-text">
+            <h2>Our Vision</h2>
+            <p>Our vision is to provide a vibrant and inclusive online platform that fosters community, streamlines society administrative tasks, and reduces manual work.</p>
+            <p>We aim to create a system that promotes collaboration, transparency, and efficiency.</p>
+            <p>This will make society participation enjoyable and stress-free for both students and administrators.</p>
+        </div>
+        
+        <!-- Right side: Image content -->
+        <div class="vision-image">
+            <img src="../Team7ByteBlossosmsPromoWeb/images/ourVision.jpg" alt="Vision Image" />
+        </div>
+    </div>
+</section>
+
+    <!-- Problem Statement Section -->
+    <section id="currentsystem" class="currentsystem">
+        <!-- Left half - Image -->
+    <div class="currentsystem-image">
+        <img src="../Team7ByteBlossosmsPromoWeb/images/overworked.png" alt="Problem Statement Image">
+    </div>
+    
+    <!-- Right half - Text -->
+    <div class="currentsystem-text">
+        <h2 class="section-title">Current System</h2>
+        <div class="currentsystem-item">
+            <p>The manual processing of society registrations and administrative tasks burdens Mrs. Thekiso, leading to delays and inefficiencies.</p>
+            <p>Students experience delays in inquiries and have to physically visit the office for assistance.</p>
+        </div>
+    </div>
+    </section>
+
+<!-- Proposed Solution Section -->
+<section id="solution" class="solution">
+    <!-- Left half - Image -->
+    <div class="solution-image">
+        <img src="../Team7ByteBlossosmsPromoWeb/images/students2.jpg" alt="Proposed Solution Image">
+    </div>
+    
+    <!-- Right half - Text -->
+    <div class="solution-text">
+        <h2 class="section-title">Our Solution</h2>
+        <div class="solution-item">
+            <p>An integrated online platform for society management, streamlining registration processes, simplifying administration, and providing centralized communication for all society leaders and their members.</p>
+        </div>
+    </div>
+</section>
+
+<!-- System Features -->
+<section id="features" class="features">
+    <h2 class="section-title">System Features</h2>
+    <div class="features-grid">
+        <div class="feature-item">
+            <h3>Member Management</h3>
+            <p>Allows students to join societies, manage membership requests, and view society details.</p>
+        </div>
+        <div class="feature-item">
+            <h3>Event Management</h3>
+            <p>Enables societies to create and manage events, send invitations, track RSVPs, and take attendance by generating an attendance code for students present at the event.</p>
+        </div>
+        <div class="feature-item">
+            <h3>Task Assignment</h3>
+            <p>Facilitates assigning tasks to society members and tracking their progress through a central dashboard.</p>
+        </div>
+        <div class="feature-item">
+            <h3>Financial Management</h3>
+            <p>Handles society budgets, financial requests, fund status, and allocations.</p>
+        </div>
+    </div>
+</section>
+
+ <!-- Stakeholder Roles Section -->
+<section id="stakeholders" class="stakeholders">
+    <h2 class="section-title">Stakeholder Roles</h2>
+    <div class="stakeholder-cards">
+        <div class="stakeholder-item">
+            <h3>Member</h3>
+            <p>Able to view upcoming events and RSVP to one of their choice</p>
+            <p>Marks presence for attendance at a particular society event using our system</p>
+        </div>
+        <div class="stakeholder-item">
+            <h3>Chairperson</h3>
+            <p>Manages society members, assigns leadership roles, and monitors activity of the society's leadership committee.</p>
+        </div>
+        <div class="stakeholder-item">
+            <h3>Secretary</h3>
+            <p>Responsible for sending event invites, taking attendance, and updating the notice board.</p>
+        </div>
+        <div class="stakeholder-item">
+            <h3>Treasurer</h3>
+            <p>Handles society funds, budget plans, and submission of financial requests.</p>
+        </div>
+        <div class="stakeholder-item">
+            <h3>Admin</h3>
+            <p>Responsible for managing all existing societies and their leaders, society registration requests, society leadership role assignments, financial and event requests, and analyzing society activities.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Team Members Section -->
+<section id="team" class="team">
+    <h2 class="section-title">Meet The Team</h2>
+    <p>  </p>
+    <div class="team-container">
+        <div class="team-member">
+            <img src="../Team7ByteBlossosmsPromoWeb/images/member1.jpg" alt="Lungile Noguyela">
+            <h3>Lungile Noguyela</h3>
+            <p>Full Stack Developer</p>
+            <p>Specializing in creating intuitive interfaces and robust backend systems.</p>
+        </div>
+        <div class="team-member">
+            <img src="../Team7ByteBlossosmsPromoWeb/images/member2.jpg" alt="Keatlegile Ntsie">
+            <h3>Keatlegile Ntsie</h3>
+            <p>Full Stack Developer</p>
+            <p>Passionate about developing scalable mobile solutions that solve real-world problems.</p>
+        </div>
+        <div class="team-member">
+            <img src="../Team7ByteBlossosmsPromoWeb/images/member3.jpg" alt="Priscilla Masunyane">
+            <h3>Priscilla Masunyane</h3>
+            <p>Full Stack Developer</p>
+            <p>Focused on improving user experiences through clean, responsive design.</p>
+        </div>
+        <div class="team-member">
+            <img src="../Team7ByteBlossosmsPromoWeb/images/member4.jpg" alt="Molebogeng Baloyi">
+            <h3>Molebogeng Baloyi</h3>
+            <p>Full Stack Developer</p>
+            <p>Enthusiastic about coding, team collaboration, and delivering high-quality projects.</p>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Society Management System | BYTE BLOSSOMS</p>
+    </footer>
+
+</body>
+</html>

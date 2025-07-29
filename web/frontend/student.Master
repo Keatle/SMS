@@ -1,0 +1,78 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="student.Master.cs" Inherits="BlossomsWeb.student" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Skill an Education Category Bootstrap Responsive Website Template - Home :: W3Layouts</title>
+
+    <!-- Google fonts -->
+    <link href="//fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="css/style-starter.css">
+
+    <asp:ContentPlaceHolder ID="head" runat="server">   
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <header class="w3l-header">
+	<div class="hero-header-11">
+		<div class="hero-header-11-content">
+			<div class="container">
+				<nav class="navbar navbar-expand-lg navbar-light py-md-2 py-0 px-0">
+				<a class="navbar-brand" href="dashboard.aspx" style="display: flex; align-items: center;">
+    <img src="images/logo-icon.png" alt="" style="width: 100px; height: auto; margin-right: 10px;" />
+    <span style="font-size: 1.2rem;">Society Management</span>
+</a>
+
+					<!-- if logo is image enable this 
+				<a class="navbar-brand" href="#home.aspx">
+						<img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+				</a>  --> 
+					<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+						<span class="navbar-toggler-icon fa icon-close fa-times"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item active">
+								<a class="nav-link" href="dashboard.aspx">Dashbboard <span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item @@profile-active">
+								<a class="nav-link" href="profile.aspx">Profile</a>
+							</li>
+							<li class="nav-item @@societies-active">
+								<a class="nav-link" href="societies.aspx">My Societies</a>
+							</li>
+							<li class="nav-item @@events-active">
+								<a class="nav-link" href="events.aspx">Events</a>
+							</li>
+							<li class="nav-item @@home-active">
+								<a class="nav-link" href="home.aspx">Log Out</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</header>
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
+

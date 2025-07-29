@@ -1,0 +1,279 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="treasurer.Master.cs" Inherits="BlossomsWeb.treasurer" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Skill an Education Category Bootstrap Responsive Website Template - Home :: W3Layouts</title>
+
+    <!-- Google fonts -->
+    <link href="//fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="css/style-starter.css">
+
+    <asp:ContentPlaceHolder ID="head" runat="server">   
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <header class="w3l-header">			
+	<div class="hero-header-11">
+		<div class="hero-header-11-content">
+			<div class="container">
+				
+				<nav class="navbar navbar-expand-lg navbar-light py-md-2 py-0 px-0">
+						<a class="navbar-brand" href="dashboard.aspx" style="display: flex; align-items: center;">
+    <img src="images/logo-icon.png" alt="" style="width: 100px; height: auto; margin-right: 10px;" />
+    <span style="font-size: 1.2rem;">Society Management</span>
+</a>
+					<!-- if logo is image enable this   
+				<a class="navbar-brand" href="#home.aspx">
+						<img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+				</a> -->
+					<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+						<span class="navbar-toggler-icon fa icon-close fa-times"></span>
+					</button>
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item active">
+								<a class="nav-link" href="dashboard.aspx">Dashboard <span class="sr-only">(current)</span></a>
+							</li>
+							 <li class="nav-item @@statement-active">
+                <a class="nav-link" href="statement.aspx">Statements</a>
+            </li>
+							<li class="nav-item dropdown">
+    <asp:Menu ID="menuFinances" runat="server" CssClass="nav-link" Orientation="Horizontal">
+        <Items>
+            <asp:MenuItem Text="Finances" NavigateUrl="#" Selectable="false">
+                <asp:MenuItem Text="Request Funds" NavigateUrl="~/request.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="Upload Funds" NavigateUrl="~/upload.aspx"></asp:MenuItem>
+            </asp:MenuItem>
+        </Items>
+    </asp:Menu>
+</li>
+								<li class="nav-item dropdown">
+    <asp:Menu ID="budget" runat="server" CssClass="nav-link" Orientation="Horizontal">
+        <Items>
+            <asp:MenuItem Text="Budget" NavigateUrl="#" Selectable="false">
+                <asp:MenuItem Text="Update Budget" NavigateUrl="~/updateBudget.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="Review Budget" NavigateUrl="~/reviewBudget.aspx"></asp:MenuItem>
+            </asp:MenuItem>
+        </Items>
+    </asp:Menu>
+</li>
+							<li class="nav-item @@home-active">
+								<a class="nav-link" href="home.aspx">Log Out</a>
+							</li>
+						</ul>
+		
+		</div>
+
+				</nav>
+				
+			</div>
+		</div>
+	</div>
+</header>
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+		   <section class="w3l-footer-22">
+      <!-- footer-22 -->
+      <div class="footer-hny py-5">
+	    <div class="text-txt row">
+          <div class="container py-lg-5">
+               <footer class="w3l-footer-29-main" id="footer">
+     <div class="footer-29 py-5">
+       <div class="container pb-lg-3">
+         <div class="row footer-top-29">
+           <div class="col-lg-4 col-md-6 footer-list-29 footer-1 mt-md-4">
+            <a class="navbar-brand" href="index.html"><img src="assets/images/logo-icon.png" alt="" style="width: 100px; height: auto;" />Society Management</a>
+             <p>"Empower, Engage, Excel" encapsulates the essence of society life, where members are empowered to pursue their passions, engage in meaningful activities, and excel in personal and professional growth.</p>
+           </div>
+           <div class="col-lg-2 col-md-6 footer-list-29 footer-2 mt-5">
+            <h6 class="footer-title-29">Explore More</h6>
+             <ul>
+               <li><a href="#gallery.html">Gallery</a></li>
+             </ul>
+           </div>
+          
+           <div class="col-lg-2 col-md-6 footer-list-29 footer-4 mt-5">
+            <h6 class="footer-title-29">Quick Links</h6>
+             <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="about.html">About</a></li>
+               <li><a href="services.html">Services</a></li>
+               <li><a href="#blog.html"> Blog</a></li>
+               <li><a href="contact.html">Contact</a></li>
+             </ul>
+           </div>
+         </div>
+       </div>
+     </div>
+     <div id="footers14-block" class="py-3">
+       <div class="container">
+         <div class="footers14-bottom text-center">
+           <div class="social">
+             <a href="#facebook" class="facebook"><span class="fa fa-facebook" aria-hidden="true"></span></a>
+             <a href="#google" class="google"><span class="fa fa-google-plus" aria-hidden="true"></span></a>
+             <a href="#twitter" class="twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a>
+             <a href="#instagram" class="instagram"><span class="fa fa-instagram" aria-hidden="true"></span></a>
+             <a href="#youtube" class="youtube"><span class="fa fa-youtube" aria-hidden="true"></span></a>
+           </div>
+           <div class="copyright mt-1">
+             <p>&copy; 2020 Skill. All Rights Reserved | Design by <a href="https://w3layouts.com/">W3Layouts</a></p>
+           </div>
+         </div>
+       </div>
+     </div>
+
+     <!-- move top -->
+     <button onclick="topFunction()" id="movetop" title="Go to top">
+       <span class="fa fa-angle-up" aria-hidden="true"></span>
+     </button>
+     <script>
+       // When the user scrolls down 20px from the top of the document, show the button
+       window.onscroll = function () {
+         scrollFunction()
+       };
+
+       function scrollFunction() {
+         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+           document.getElementById("movetop").style.display = "block";
+         } else {
+           document.getElementById("movetop").style.display = "none";
+         }
+       }
+
+       // When the user clicks on the button, scroll to the top of the document
+       function topFunction() {
+         document.body.scrollTop = 0;
+         document.documentElement.scrollTop = 0;
+       }
+     </script>
+     <!-- /move top -->
+
+   </footer>
+   </div>
+          </div>
+      </div>
+      <!-- //titels-5 -->
+      <!-- move top -->
+
+      <script>
+          // When the user scrolls down 20px from the top of the document, show the button
+          window.onscroll = function () {
+              scrollFunction()
+          };
+
+          function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                  document.getElementById("movetop").style.display = "block";
+              } else {
+                  document.getElementById("movetop").style.display = "none";
+              }
+          }
+
+          // When the user clicks on the button, scroll to the top of the document
+          function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+          }
+      </script>
+      <!-- /move top -->
+  </section>
+
+
+  </body>
+
+  </html>
+
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+<script src="assets/js/jquery-2.1.4.min.js"></script>
+<!--/login-->
+<script>
+		$(document).ready(function () {
+			$(".button-log a").click(function () {
+				$(".overlay-login").fadeToggle(200);
+				$(this).toggleClass('btn-open').toggleClass('btn-close');
+			});
+		});
+		$('.overlay-close1').on('click', function () {
+			$(".overlay-login").fadeToggle(200);
+			$(".button-log a").toggleClass('btn-open').toggleClass('btn-close');
+			open = false;
+		});
+  </script>
+<!--//login-->
+<script>
+// optional
+		$('#customerhnyCarousel').carousel({
+				interval: 5000
+    });
+  </script>
+ <!-- cart-js -->
+ <script src="assets/js/minicart.js"></script>
+ <script>
+     transmitv.render();
+
+     transmitv.cart.on('transmitv_checkout', function (evt) {
+         var items, len, i;
+
+         if (this.subtotal() > 0) {
+             items = this.items();
+
+             for (i = 0, len = items.length; i < len; i++) {}
+         }
+     });
+ </script>
+ <!-- //cart-js -->
+<!--pop-up-box-->
+<script src="assets/js/jquery.magnific-popup.js"></script>
+<!--//pop-up-box-->
+<script>
+  $(document).ready(function () {
+    $('.popup-with-zoom-anim').magnificPopup({
+      type: 'inline',
+      fixedContentPos: false,
+      fixedBgPos: true,
+      overflowY: 'auto',
+      closeBtnInside: true,
+      preloader: false,
+      midClick: true,
+      removalDelay: 300,
+      mainClass: 'my-mfp-zoom-in'
+    });
+
+  });
+</script>
+<!--//search-bar-->
+<!-- disable body scroll which navbar is in active -->
+
+<script>
+  $(function () {
+    $('.navbar-toggler').click(function () {
+      $('body').toggleClass('noscroll');
+    })
+  });
+</script>
+<!-- disable body scroll which navbar is in active -->
+<script src="assets/js/bootstrap.min.js"></script>
+
+    </form>
+</body>
+</html>
+
+

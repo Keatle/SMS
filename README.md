@@ -1,2 +1,2 @@
 # SMS
-Repo consists of the Society Management System my team and I have created for our third year project
+A full-stack Society Management System featuring both web and mobile applications for managing society events, budgets, attendance, members, and more.
